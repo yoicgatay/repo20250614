@@ -1,0 +1,8 @@
+name: repo20250614-main
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "this is pen"
+
