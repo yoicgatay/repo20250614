@@ -5,12 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "this is pen"
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Show current directory
-        run: pwd
-
-      - name: List files in current directory
-        run: ls -al
+      - uses: actions/checkout@v2
+      - run: |
+          ls -al
+          cd .github/workflows/
+          ls -al
 
